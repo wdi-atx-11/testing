@@ -47,7 +47,11 @@ Now, you can try to test after you've developed a product, but here are some pro
   - Will you have the time?
   - Will your PM let you do this? Or will you have to begin creating the next bit of functionality?
 
-#### What is TDD?
+#### What is TDD? For that matter, what is BDD?
+
+BDD is behavior-driven development. We can utilize TDD within a BDD framework. BDD is a more holistic approach to TDD. With BDD we describe __*behaviors*__ that our app should achieve and we develop from the start with these in mind. This way we have clearly defined goals and standards to hold our app to. The goal of BDD is to have your __whole team__ gaining value from your tests, not just one part of the team (i.e. developers or engineers). BDD makes it easier for your Product Manager to visualize the necessity of TDD, which means more overall efficiency and possibly lower costs in the long run.
+
+> BDD can, and should be, used together with TDD and unit testing methods.
 
 TDD stands for test-driven development. Also called red/green development, in TDD, you write the tests first, before writing any code and then write code that makes the test pass.
 
