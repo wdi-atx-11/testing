@@ -18,19 +18,17 @@ competencies: Testing
 - Describe TDD and the benefits it brings
 - Describe the importance of testing your code programmatically
 - Write basic test specs to validate attributes working
-- Use describe and assertion functions to do basic testing
+- Use *describe* and *assertion* functions to do basic testing
 
 ### Preparation
 *Before this lesson, students should already be able to:*
 
 - Explain basic file and folder structure in a simple RESTful node app
-<!-- - Run Ruby Scripts
-- Explain OOP in Ruby -->
 
 
-## What is TDD? What is testing? Intro (15 mins)
+## What is testing? What is TDD? Intro (15 mins)
 
-#### What is testing?
+#### Testing
 
 Testing is the process of making sure your code does what it's supposed to.
 
@@ -49,7 +47,7 @@ Now, you can try to test after you've developed a product, but here are some pro
 
 #### What is TDD? For that matter, what is BDD?
 
-BDD is behavior-driven development. We can utilize TDD within a BDD framework. BDD is a more holistic approach to TDD. With BDD we describe __*behaviors*__ that our app should achieve and we develop from the start with these in mind. This way we have clearly defined goals and standards to hold our app to. The goal of BDD is to have your __whole team__ gaining value from your tests, not just one part of the team (i.e. developers or engineers). BDD makes it easier for your Product Manager to visualize the necessity of TDD, which means more overall efficiency and possibly lower costs in the long run.
+BDD is behavior-driven development. We can utilize TDD within a BDD framework. BDD is a more holistic approach to TDD. With BDD we describe __*behaviors*__ that our app should achieve, then write tests to reflect these concerns, and we develop from the start with these in mind. This way we have clearly defined goals and standards to hold our app to. The goal of BDD is to have your __whole team__ gaining value from your tests, not just one part of the team (i.e. developers or engineers). BDD makes it easier for your Product Manager/Designer/CEO to visualize the necessity of TDD as an overall business concern, which means more overall efficiency and possibly lower costs (or a *raise* for you) in the long run.
 
 > BDD can, and should be, used together with TDD and unit testing methods.
 

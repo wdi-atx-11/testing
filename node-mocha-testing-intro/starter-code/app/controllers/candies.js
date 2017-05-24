@@ -6,11 +6,11 @@ var express = require('express'),
 
 
 candies = [
-{id: 1, name: "Chewing Gum" , color: "Red"},
-{id: 2, name: "Pez"         , color: "Green"},
-{id: 3, name: "Marshmallow" , color: "Pink"},
-{id: 4, name: "Candy Stick" , color: "Blue"}
-]
+  {id: 1, name: "Chewing Gum" , color: "Red"},
+  {id: 2, name: "Pez"         , color: "Green"},
+  {id: 3, name: "Marshmallow" , color: "Pink"},
+  {id: 4, name: "Candy Stick" , color: "Blue"}
+];
 
 
 // http://127.0.0.1:3000/candies
@@ -19,13 +19,13 @@ router.route('/')
   .get(function(req, res, next) {
     res.json(candies);
   })
-  //POST a new blob
+  //POST a new candy
   .post(function(req, res) {
     candies.push(req.body)
     res.json(req.body);
   });
 
-// Show a Book
+// Show a Candy
 router.route('/:id').get(function(req,res){
 
     candy = candies.filter(function(element){ return element["id"] == req.params.id })[0]
@@ -37,10 +37,10 @@ router.route('/:id').get(function(req,res){
         delete candies[i]
       }
     }
-    res.json({message : 'deleted' });
+    res.json({ message : 'deleted' });
   });
 
-//Update a book
+//Update a candy
 router.put('/:id/edit', function(req, res) {
   for(i in candies){
     if(candies[i]["id"] == req.params.id){
@@ -55,4 +55,3 @@ router.put('/:id/edit', function(req, res) {
 
 
 module.exports = router
-
