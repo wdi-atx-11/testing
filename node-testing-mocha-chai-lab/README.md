@@ -24,7 +24,7 @@ At the end of this lab, you should have tests written to make sure our index wor
 
 #### Requirements
 
-- Setup the app to run mocha, chai and sinon
+- Setup the app to run __mocha__, __chai__ and __supertest__
 - Implement these tests:
 
 
