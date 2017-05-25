@@ -100,7 +100,7 @@ First, let's install mocha, and we will install this package globally using `-g`
 npm install -g mocha
 ```
 
-Then we will install chai using --save-dev
+Then we will install chai using --save-dev to add it to our dev dependencies:
 
 ```bash
 npm install chai --save-dev
