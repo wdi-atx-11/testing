@@ -38,7 +38,7 @@ Automated testing is achieved by writing code that checks your code. This may in
 
 When you write very small tests that check very small sections of classes or models, we'd call that "unit" testing.
 
-As your code base grows, so does you test coverage. You should get to a situation where you can run your test code at any time, and every single line of your code gets passed through to ensure it's still returning what you expected it to when it was first written.
+As your code base grows, so does your test coverage. You should get to a situation where you can run your test code at any time, and every single line of your code gets passed through to ensure it's still returning what you expected it to when it was first written.
 
 Now, you can try to test after you've developed a product, but here are some problems with that approach:
 
@@ -126,7 +126,7 @@ Then we will write the tests inside a file called `candies_tests.js`:
 touch tests/candies_tests.js
 ```
 
-> Note: Explain that because our tests will request the application through HTTP, students have to make sure they are running the app while running the tests
+> Note: Because our tests will request the application through HTTP, make sure you are running the app while running the tests.
 
 #### Let's write some tests
 
@@ -136,7 +136,7 @@ Open the file `candies_tests.js`. We now need to require some dependencies at th
 var should    = require("chai").should(),
 expect        = require("chai").expect,
 supertest     = require("supertest"),
-api           = supertest("http://localhost:3000")
+api           = supertest("http://localhost:3000");
 ```
 
 Make sure you set the url correctly, as this will be used to request the app and analyze the response.
@@ -162,7 +162,7 @@ describe("Candies", function(){
 })
 ```
 
-> **Note:** Make sure that the done is in the it block and not the describe block!
+> **Note:** Make sure that the *done* is in the *it* block and not the *describe* block!
 
 Now go in the command line and type `mocha`, you should get an output looking like :
 
