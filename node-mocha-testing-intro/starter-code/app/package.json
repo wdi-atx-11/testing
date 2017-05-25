@@ -15,8 +15,11 @@
     "mongoose": "^4.0.7",
     "morgan": "~1.6.1",
     "pug": "^2.0.0-rc.1"
-
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "supertest": "^3.0.0"
+  }
 }
