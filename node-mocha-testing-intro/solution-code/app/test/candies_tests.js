@@ -9,7 +9,7 @@ describe("GET /candies", function(){
       .get("/candies")
       .set("Accept", "application/json")
       .expect(200, done)
-  })
+  });
 
   it ("should return an array", function(done){
     api
@@ -18,8 +18,8 @@ describe("GET /candies", function(){
       .end(function(err, res) {
         expect(res.body).to.be.an('array');
         done();
-      })
-  })
+      });
+  });
 
   it("should return an object that have a field called 'name' ", function(done){
     api
@@ -28,13 +28,13 @@ describe("GET /candies", function(){
       .end(function(err, res){
         expect(res.body[0]).to.have.property('name');
         done();
-      })
-  })
+      });
+  });
 });
 
 describe("POST /candies", function(){
   before(function(done) {
-    api 
+    api
       .post("/candies")
       .set("Accept", "application/json")
       .send({
@@ -51,8 +51,8 @@ describe("POST /candies", function(){
       .end(function(err, res){
         expect(res.body.length).to.equal(5);
         done();
-      })
-  })
+      });
+  });
 
 });
 
@@ -113,6 +113,3 @@ describe('PUT /candies/:id/edit', function() {
     });
   });
 });
-
-
-

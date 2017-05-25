@@ -303,3 +303,6 @@ We've covered the principles of testing in JavaScript, but Chai offers a lot of 
 
 - How does Mocha work with Chai to write tests in your JavaScript application?
 - Describe how to configure your app to use Mocha and Chai.
+
+## Hungry for more?
+- Read about how [Behavior-Driven Development and Test-Driven Development](https://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/) can, and should, coexist.
